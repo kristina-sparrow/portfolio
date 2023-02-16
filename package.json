@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --mode development",
     "dev": "webpack serve --mode development",
-    "deploy": "npm run build && gh-pages -d public"
+    "deploy": "echo 'kristinasparrow.com' > ./public/CNAME && gh-pages -d public"
   },
   "repository": {
     "type": "git",
@@ -41,11 +41,22 @@
       "webpack.config.js",
       "bundle.js"
     ],
-    "rules": {}
+    "rules": {
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [
+            ".js",
+            ".jsx"
+          ]
+        }
+      ]
+    }
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
     "react-router-dom": "^6.8.1"
   },
   "devDependencies": {

@@ -11,7 +11,6 @@ import placeholder10 from "../assets/placeholder-10.jpg";
 
 const projects = [
     {
-        id: 1,
         name: "Placeholder 01",
         description: "This is a placeholder description",
         techStack: ["HTML", "CSS", "JavaScript"],
@@ -20,7 +19,6 @@ const projects = [
         image: placeholder1,
     },
     {
-        id: 2,
         name: "Placeholder 02",
         description: "This is a placeholder description",
         techStack: ["HTML", "CSS", "JavaScript"],
@@ -29,7 +27,6 @@ const projects = [
         image: placeholder2,
     },
     {
-        id: 3,
         name: "Placeholder 03",
         description: "This is a placeholder description",
         techStack: ["HTML", "CSS", "JavaScript"],
@@ -38,7 +35,6 @@ const projects = [
         image: placeholder3,
     },
     {
-        id: 4,
         name: "Placeholder 04",
         description: "This is a placeholder description",
         techStack: ["HTML", "CSS", "JavaScript"],
@@ -47,7 +43,6 @@ const projects = [
         image: placeholder4,
     },
     {
-        id: 5,
         name: "Placeholder 05",
         description: "This is a placeholder description",
         techStack: ["HTML", "CSS", "JavaScript"],
@@ -56,7 +51,6 @@ const projects = [
         image: placeholder5,
     },
     {
-        id: 6,
         name: "Placeholder 06",
         description: "This is a placeholder description",
         techStack: ["HTML", "CSS", "JavaScript"],
@@ -65,7 +59,6 @@ const projects = [
         image: placeholder6,
     },
     {
-        id: 7,
         name: "Placeholder 07",
         description: "This is a placeholder description",
         techStack: ["HTML", "CSS", "JavaScript"],
@@ -74,7 +67,6 @@ const projects = [
         image: placeholder7,
     },
     {
-        id: 8,
         name: "Placeholder 08",
         description: "This is a placeholder description",
         techStack: ["HTML", "CSS", "JavaScript"],
@@ -83,7 +75,6 @@ const projects = [
         image: placeholder8,
     },
     {
-        id: 9,
         name: "Placeholder 09",
         description: "This is a placeholder description",
         techStack: ["HTML", "CSS", "JavaScript"],
@@ -92,7 +83,6 @@ const projects = [
         image: placeholder9,
     },
     {
-        id: 10,
         name: "Placeholder 10",
         description: "This is a placeholder description",
         image: placeholder10,

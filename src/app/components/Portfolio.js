@@ -1,11 +1,12 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import projects from "../data/projects"
+import { v4 as uuidv4 } from 'uuid'
 
 export default function Portfolio() {
   const projectCards = projects.map((project) => (
     <ProjectCard
-      key={project.id}
+      key={uuidv4()}
       title={project.title}
       description={project.description}
       repoLink={project.repoLink}

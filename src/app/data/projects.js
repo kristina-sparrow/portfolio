@@ -1,3 +1,14 @@
+import placeholder1 from "../assets/placeholder-01.jpg";
+import placeholder2 from "../assets/placeholder-02.jpg";
+import placeholder3 from "../assets/placeholder-03.jpg";
+import placeholder4 from "../assets/placeholder-04.jpg";
+import placeholder5 from "../assets/placeholder-05.jpg";
+import placeholder6 from "../assets/placeholder-06.jpg";
+import placeholder7 from "../assets/placeholder-07.jpg";
+import placeholder8 from "../assets/placeholder-08.jpg";
+import placeholder9 from "../assets/placeholder-09.jpg";
+import placeholder10 from "../assets/placeholder-10.jpg";
+
 const projects = [
     {
         id: 1,
@@ -6,7 +17,7 @@ const projects = [
         techStack: ["HTML", "CSS", "JavaScript"],
         repoLink: "https://github.com/kristina-sparrow",
         liveLink: "https://kristina-sparrow.github.io/",
-        image: "../assets/placeholder-01.jpg",
+        image: placeholder1,
     },
     {
         id: 2,
@@ -15,7 +26,7 @@ const projects = [
         techStack: ["HTML", "CSS", "JavaScript"],
         repoLink: "https://github.com/kristina-sparrow",
         liveLink: "https://kristina-sparrow.github.io/",
-        image: "../assets/placeholder-02.jpg",
+        image: placeholder2,
     },
     {
         id: 3,
@@ -24,7 +35,7 @@ const projects = [
         techStack: ["HTML", "CSS", "JavaScript"],
         repoLink: "https://github.com/kristina-sparrow",
         liveLink: "https://kristina-sparrow.github.io/",
-        image: "../assets/placeholder-03.jpg",
+        image: placeholder3,
     },
     {
         id: 4,
@@ -33,7 +44,7 @@ const projects = [
         techStack: ["HTML", "CSS", "JavaScript"],
         repoLink: "https://github.com/kristina-sparrow",
         liveLink: "https://kristina-sparrow.github.io/",
-        image: "../assets/placeholder-04.jpg",
+        image: placeholder4,
     },
     {
         id: 5,
@@ -42,7 +53,7 @@ const projects = [
         techStack: ["HTML", "CSS", "JavaScript"],
         repoLink: "https://github.com/kristina-sparrow",
         liveLink: "https://kristina-sparrow.github.io/",
-        image: "../assets/placeholder-05.jpg",
+        image: placeholder5,
     },
     {
         id: 6,
@@ -51,7 +62,7 @@ const projects = [
         techStack: ["HTML", "CSS", "JavaScript"],
         repoLink: "https://github.com/kristina-sparrow",
         liveLink: "https://kristina-sparrow.github.io/",
-        image: "../assets/placeholder-06.jpg",
+        image: placeholder6,
     },
     {
         id: 7,
@@ -60,7 +71,7 @@ const projects = [
         techStack: ["HTML", "CSS", "JavaScript"],
         repoLink: "https://github.com/kristina-sparrow",
         liveLink: "https://kristina-sparrow.github.io/",
-        image: "../assets/placeholder-07.jpg",
+        image: placeholder7,
     },
     {
         id: 8,
@@ -69,7 +80,7 @@ const projects = [
         techStack: ["HTML", "CSS", "JavaScript"],
         repoLink: "https://github.com/kristina-sparrow",
         liveLink: "https://kristina-sparrow.github.io/",
-        image: "../assets/placeholder-08.jpg",
+        image: placeholder8,
     },
     {
         id: 9,
@@ -78,13 +89,13 @@ const projects = [
         techStack: ["HTML", "CSS", "JavaScript"],
         repoLink: "https://github.com/kristina-sparrow",
         liveLink: "https://kristina-sparrow.github.io/",
-        image: "../assets/placeholder-09.jpg",
+        image: placeholder9,
     },
     {
         id: 10,
         name: "Placeholder 10",
         description: "This is a placeholder description",
-        image: "../assets/placeholder-10.jpg",
+        image: placeholder10,
     },
 ];
 

@@ -2,9 +2,7 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { MdOpenInNew } from "react-icons/md";
 
-export default function ProjectCard({ project }) {
-  const { name, description, repoLink, liveLink, image } = project;
-
+export default function ProjectCard({ name, description, repoLink, liveLink, image }) {
   return (
     <div className="project">
         <img src={image} alt={`${name} screenshot`} className="project__img" />

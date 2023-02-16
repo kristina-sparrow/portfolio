@@ -7,7 +7,7 @@ export default function Footer() {
     <SocialLink
       key={social.id}
       link={social.link}
-      image={social.icon}
+      icon={social.icon}
     />
   ));
   return (

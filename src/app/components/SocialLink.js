@@ -1,7 +1,6 @@
 import React from "react";
 
-export default function SocialLink({ social }) {
-  const { link, icon } = social;
+export default function SocialLink({ link, icon }) {
   return (
     <li className="social-list__item">
         <a
@@ -10,7 +9,7 @@ export default function SocialLink({ social }) {
             rel="noopener noreferrer"
             href={link}
         >
-            {icon}
+          {icon}
         </a>
     </li>
   );

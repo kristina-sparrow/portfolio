@@ -1,6 +1,7 @@
 import React from "react";
+import copy from "../data/copy";
 
-export default function Services({ copy }) {
+export default function Services() {
   return (
     <section className="my-services" id="services">
       <h2 className="section__title section__title--services">What I do</h2>

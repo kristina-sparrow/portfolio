@@ -1,5 +1,5 @@
 import React from "react";
-import kristina1 from "../assets/kristina-01.jpg"
+import kristina1 from "../../assets/kristina-01.jpg"
 
 export default function Intro() {
   return (

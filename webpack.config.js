@@ -8,6 +8,10 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "public"),
     filename: "bundle.js",
+    assetModuleFilename: pathData => {
+      const filepath = path.dirname(pathData.filename).split('/').slice(1).join('/');
+      return `${filepath}/[name][ext]`;
+  },
   },
   resolve: {
     extensions: [".js", ".jsx"],

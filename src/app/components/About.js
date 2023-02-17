@@ -1,5 +1,5 @@
 import React from "react";
-import kristina2 from "../assets/kristina-02.jpg";
+import kristina2 from "../../assets/kristina-02.jpg";
 import copy from "../data/copy";
 import { v4 as uuidv4 } from 'uuid'
 

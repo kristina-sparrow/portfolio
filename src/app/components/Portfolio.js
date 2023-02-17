@@ -7,7 +7,7 @@ export default function Portfolio() {
   const projectCards = projects.map((project) => (
     <ProjectCard
       key={uuidv4()}
-      title={project.title}
+      name={project.name}
       description={project.description}
       repoLink={project.repoLink}
       liveLink={project.liveLink}

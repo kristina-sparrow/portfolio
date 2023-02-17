@@ -5,7 +5,9 @@ import { MdOpenInNew } from "react-icons/md";
 export default function ProjectCard({ name, description, repoLink, liveLink, image }) {
   return (
     <div className="project">
-        <img src={image} alt={`${name} screenshot`} className="project__img" />
+        <div className="project__img-container">
+          <img src={image} alt={`${name} screenshot`} className="project__img" />
+        </div>
         <div className='project__name-and-links'>
           <h2>{name}</h2>
           <div className='project__links'>

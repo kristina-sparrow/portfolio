@@ -6,13 +6,14 @@ $fw-reg: 300;
 $fw-bold: 900;
 
 $clr-light: #fff;
-$clr-dark: #303030;
+$clr-dark: #2b2b31;
 $clr-grayd: #636363;
+$clr-graym: #818080;
 $clr-grayl: #d5d3d3;
-$clr-accent: #16e0bd;
+$clr-accent: #16e0dd;
 
-$fs-h1: 3rem;
-$fs-h2: 2.25rem;
+$fs-h1: 2.5rem;
+$fs-h2: 2rem;
 $fs-h3: 1.25rem;
 $fs-body: 1rem;
 
@@ -49,7 +50,13 @@ body {
 }
 
 section {
-    padding: 5em 2em;
+    padding: 2em;
+}
+
+@media (min-width: 600px) {
+    section {
+        padding: 3.5em 1.5em;
+    }
 }
 
 img {
@@ -58,11 +65,6 @@ img {
 }
 
 strong { font-weight: $fw-bold }
-
-:focus {
-    outline: 3px solid $clr-accent;
-    outline-offset: 3px;
-}
 
 /* BUTTONS */
 .btn {
@@ -75,6 +77,7 @@ strong { font-weight: $fw-bold }
     font-size: .8rem;
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-family: inherit;
     font-weight: $fw-bold;
     transition: transform 200ms ease-in-out;
     &:hover {
@@ -128,20 +131,25 @@ h3 { font-size: $fs-h3 }
 header {
     display: flex;
     justify-content: space-between;
-    padding: 1em;
+    padding: 1em 1em 0 1em;
     color: $clr-dark;
 
     .logo {
-        max-width: 100px;
+        max-width: 200px;
         letter-spacing: 0.1rem;
         a {
             color: inherit;
             text-decoration: none;
+            font-size: $fs-h3;
         }
         span {
             padding: 0 5px;
             color: $clr-accent;
+            font-weight: $fw-bold;
         }
+        span:nth-of-type(2) {
+            padding: 0;
+          }
     }
 
     .nav {
@@ -160,13 +168,13 @@ header {
             display: flex;
             height: 100%;
             flex-direction: column;
-            justify-content: space-evenly;
+            justify-content: center;
             align-items: center;
-            margin: 0;
-            padding: 0;
+            gap: 2em;
+            overflow: hidden;
             .nav__link {
                 color: inherit;
-                font-weight: $fw-bold;
+                font-weight: $fw-reg;
                 font-size: $fs-h2;
                 text-decoration: none;
                 &:hover {
@@ -185,7 +193,7 @@ header {
     cursor: pointer;
     position: absolute;
     right: 1em;
-    top: 1.5em;
+    top: 1.8em;
     z-index: 1000;
 
     .hamburger {
@@ -206,7 +214,7 @@ header {
             position: absolute;
             left: 0;
             right: 0;
-            top: 6px;
+            top: 8px;
         }
         &::after {
             background: $clr-accent;
@@ -218,7 +226,7 @@ header {
             position: absolute;
             left: 0;
             right: 0;
-            bottom: 6px;
+            bottom: 8px;
         }
     }
 }
@@ -262,10 +270,11 @@ header {
             "img title"
             "img subtitle";
         grid-template-columns: min-content max-content;
+        align-items: center;
         
         .intro__img {
             grid-area: img;
-            min-width: 250px;
+            min-width: 275px;
             position: relative;
             z-index: 2;
         }  
@@ -284,17 +293,22 @@ header {
 
 /*  ABOUT ME */
 .about-me {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
     .about-me__img {
         box-shadow: $bs;
+    }
+    .about-me__body {
+        p {
+            margin: 1em 0;
+        }
     }
 }
 
 @media (min-width: 600px) {
     .about-me {
         display: grid;
-        grid-template-columns: 1fr 200px;
+        grid-template-columns: 1fr 300px;
         grid-template-areas: 
             "title img"
             "subtitle img"
@@ -305,6 +319,7 @@ header {
             grid-area: img;
             position: relative;
             z-index: 2;
+            min-height: 275px;
         }
 
         .section__title--about {
@@ -319,6 +334,7 @@ header {
             width: calc(100% + 2em);
             padding-left: 1em;
             padding-right: calc(200px + 4em);
+            align-self: center;
         }
     }
 }
@@ -332,15 +348,15 @@ header {
     text-align: center;
 
     .section__title--services {
-        color: $clr-accent;
+        color: $clr-light;
         position: relative;
         &::after {
             content: '';
             display: block;
             width: 2em;
             height: 1px;
-            margin: 0.5em auto 0.5em;
-            background: $clr-grayl;
+            margin: 0.3em auto 0.5em;
+            background: $clr-graym;
         }
     }
 
@@ -349,7 +365,6 @@ header {
         .service {
             max-width: 300px;
             margin: 0 auto;
-            padding-bottom: 1rem;
             h3 {
                 padding: 1rem 0 0.5rem 0;
                 font-size: 1.5rem;
@@ -359,11 +374,7 @@ header {
                 font-weight: $fw-reg;
                 color: $clr-grayl;
                 margin: 0 0.5rem;
-            }
-            &:hover {
-                background-color: $clr-accent;
-                color: $clr-dark;
-                p { color: inherit }
+                text-align: left;
             }
         }
     }
@@ -372,7 +383,7 @@ header {
 @media (min-width: 800px) {
     .services {
         display: flex;
-        max-width: 1000px;
+        max-width: 1100px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -389,10 +400,15 @@ header {
     flex-direction: column;
     align-items: center;
     
+    .section__subtitle--work {
+        font-size: $fs-body;
+        font-weight: $fw-reg;
+    }
+
     .portfolio {
-        max-width: 1000px;
+        max-width: 1100px;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
         gap: 1.75rem;
         justify-items: center;
         
@@ -403,7 +419,7 @@ header {
             display: flex;
             flex-direction: column;
             box-shadow: $bs;
-            max-height: 1000px;
+            max-height: 500px;
             transition: transform 500ms cubic-bezier(.5, 0, .5, 1);
             &:hover {
                 position: relative;
@@ -423,12 +439,14 @@ header {
                 overflow: hidden;
                 .project__img {
                     width: 100%;
+                    height: auto;
                     object-fit: cover;
                     transition: 
                         transform 500ms cubic-bezier(.5, 0, .5, 1),
                         opacity 250ms linear;
                     &:hover {
                         opacity: .9;
+                        cursor: pointer;
                     }
                 }
             }
@@ -443,7 +461,8 @@ header {
                     display: flex;
                     gap: 2rem;
                     .project__link {
-                        transition: transform 0.40s;
+                        transition: transform 0.30s;
+                        font-size: $fs-h3;
                         &:hover {
                             transform: scale(1.2);
                         }
@@ -463,12 +482,41 @@ header {
     }   
 }
 
+@media (max-width: 800px) {
+    .my-work {
+        .portfolio {
+            max-width: 600px;
+            grid-template-columns: repeat(1, 1fr);
+            justify-items: center;
+            .project {
+                max-height: 400px;
+                h2 {
+                    font-size: $fs-h3;
+                }
+                .project__img-container {
+                    max-height: 200px;
+                }
+                .project__name-and-links {
+                    padding: 1rem;
+                    .project__links {
+                        gap: 2rem;
+                        font-size: 1.4em;
+                    }
+                }
+                .project__description {
+                    padding: 0 1rem 1rem 1rem;
+                }
+            }
+        }
+    }
+}
+
 /* FOOTER */
 .footer {
     background: #111;
     color: $clr-accent;
     text-align: center;
-    padding: 2em 0;
+    padding: 1em 0;
     font-size: $fs-h3;
 
     a {
@@ -487,7 +535,7 @@ header {
         list-style: none;
         display: flex;
         justify-content: center;
-        margin: 2em 0 0;
+        margin: 1em 0 0;
         padding: 0;
         .social-list__item {
             margin: 0 .5em;
